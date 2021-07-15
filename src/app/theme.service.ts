@@ -48,18 +48,31 @@ export class ThemeService {
     this.availableTheme.forEach((theme) => this.toggleClass(theme));
   }
 
-  addClass(name: string) {
+  /**
+   * internal only
+   * @param name className
+   */
+  private addClass(name: string) {
     this.appEl.classList.add(name);
   }
 
-  toggleClass(name: string) {
+  /**
+   * internal only
+   * @param name className
+   */
+  private toggleClass(name: string) {
     this.appEl.classList.toggle(name);
   }
 
+  /**
+   * tick global switch to light theme
+   */
   lightTheme() {
     this.addClass(this.LIGHT_THEME);
   }
-
+  /**
+   * tick global switch to dark theme
+   */
   darkTheme() {
     this.addClass(this.DARK_THEME);
   }
