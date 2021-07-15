@@ -1,0 +1,11 @@
+.container {
+  color: var(--font-color, black);
+  background-color: var(--background-color, white);
+
+  display: flex;
+  flex-direction: column;
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+  padding: 32px 16px;
+  margin: 0.5em;
+}

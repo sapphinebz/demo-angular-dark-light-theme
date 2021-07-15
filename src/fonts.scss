@@ -1,0 +1,7 @@
+$font-family: "Kanit";
+$backgroundColor: pink;
+
+@mixin dangerBackground {
+  background-color: $backgroundColor;
+  font-size: 20px;
+}
